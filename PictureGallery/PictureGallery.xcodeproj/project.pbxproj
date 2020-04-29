@@ -8,11 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		755C1AD42456116E00CD7D35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755C1AD32456116E00CD7D35 /* AppDelegate.swift */; };
-		755C1AD82456116E00CD7D35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755C1AD72456116E00CD7D35 /* ViewController.swift */; };
+		755C1AD82456116E00CD7D35 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755C1AD72456116E00CD7D35 /* RootViewController.swift */; };
 		755C1ADB2456116E00CD7D35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 755C1AD92456116E00CD7D35 /* Main.storyboard */; };
 		755C1ADD2456117000CD7D35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 755C1ADC2456117000CD7D35 /* Assets.xcassets */; };
 		755C1AE02456117000CD7D35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 755C1ADE2456117000CD7D35 /* LaunchScreen.storyboard */; };
 		755C1AEB2456117000CD7D35 /* PictureGalleryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755C1AEA2456117000CD7D35 /* PictureGalleryTests.swift */; };
+		7592A7962459E6B200890488 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7592A7952459E6B200890488 /* Utility.swift */; };
+		7592A7982459E76E00890488 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7592A7972459E76E00890488 /* ResponseModel.swift */; };
+		7592A79B2459E7BC00890488 /* DataFetchingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7592A79A2459E7BC00890488 /* DataFetchingError.swift */; };
+		7592A79D2459E7E300890488 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7592A79C2459E7E300890488 /* ImageDownloader.swift */; };
+		7592A79F2459E81000890488 /* UIAlertController+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7592A79E2459E81000890488 /* UIAlertController+Helper.swift */; };
+		7592A7A22459EAF500890488 /* Network Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7592A7A12459EAF500890488 /* Network Wrapper.swift */; };
+		7592A7A42459EB4300890488 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7592A7A32459EB4300890488 /* Reachability.swift */; };
+		7592A7A62459EB5A00890488 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7592A7A52459EB5A00890488 /* ReachabilityManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +36,7 @@
 /* Begin PBXFileReference section */
 		755C1AD02456116E00CD7D35 /* PictureGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PictureGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		755C1AD32456116E00CD7D35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		755C1AD72456116E00CD7D35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		755C1AD72456116E00CD7D35 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		755C1ADA2456116E00CD7D35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		755C1ADC2456117000CD7D35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		755C1ADF2456117000CD7D35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +44,14 @@
 		755C1AE62456117000CD7D35 /* PictureGalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PictureGalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		755C1AEA2456117000CD7D35 /* PictureGalleryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureGalleryTests.swift; sourceTree = "<group>"; };
 		755C1AEC2456117000CD7D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7592A7952459E6B200890488 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		7592A7972459E76E00890488 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		7592A79A2459E7BC00890488 /* DataFetchingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetchingError.swift; sourceTree = "<group>"; };
+		7592A79C2459E7E300890488 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		7592A79E2459E81000890488 /* UIAlertController+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Helper.swift"; sourceTree = "<group>"; };
+		7592A7A12459EAF500890488 /* Network Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network Wrapper.swift"; sourceTree = "<group>"; };
+		7592A7A32459EB4300890488 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		7592A7A52459EB5A00890488 /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +93,11 @@
 		755C1AD22456116E00CD7D35 /* PictureGallery */ = {
 			isa = PBXGroup;
 			children = (
+				7592A7A02459EAD700890488 /* Network Layer */,
+				7592A7992459E77300890488 /* Model */,
+				7592A7942459E68000890488 /* Helper Class */,
+				7592A7932459E67100890488 /* ViewController */,
 				755C1AD32456116E00CD7D35 /* AppDelegate.swift */,
-				755C1AD72456116E00CD7D35 /* ViewController.swift */,
 				755C1AD92456116E00CD7D35 /* Main.storyboard */,
 				755C1ADC2456117000CD7D35 /* Assets.xcassets */,
 				755C1ADE2456117000CD7D35 /* LaunchScreen.storyboard */,
@@ -94,6 +113,43 @@
 				755C1AEC2456117000CD7D35 /* Info.plist */,
 			);
 			path = PictureGalleryTests;
+			sourceTree = "<group>";
+		};
+		7592A7932459E67100890488 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				755C1AD72456116E00CD7D35 /* RootViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7592A7942459E68000890488 /* Helper Class */ = {
+			isa = PBXGroup;
+			children = (
+				7592A7952459E6B200890488 /* Utility.swift */,
+				7592A79A2459E7BC00890488 /* DataFetchingError.swift */,
+				7592A79C2459E7E300890488 /* ImageDownloader.swift */,
+				7592A79E2459E81000890488 /* UIAlertController+Helper.swift */,
+			);
+			path = "Helper Class";
+			sourceTree = "<group>";
+		};
+		7592A7992459E77300890488 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7592A7972459E76E00890488 /* ResponseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7592A7A02459EAD700890488 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				7592A7A12459EAF500890488 /* Network Wrapper.swift */,
+				7592A7A32459EB4300890488 /* Reachability.swift */,
+				7592A7A52459EB5A00890488 /* ReachabilityManager.swift */,
+			);
+			path = "Network Layer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +253,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				755C1AD82456116E00CD7D35 /* ViewController.swift in Sources */,
+				755C1AD82456116E00CD7D35 /* RootViewController.swift in Sources */,
+				7592A79F2459E81000890488 /* UIAlertController+Helper.swift in Sources */,
+				7592A79B2459E7BC00890488 /* DataFetchingError.swift in Sources */,
+				7592A7A22459EAF500890488 /* Network Wrapper.swift in Sources */,
+				7592A7A62459EB5A00890488 /* ReachabilityManager.swift in Sources */,
 				755C1AD42456116E00CD7D35 /* AppDelegate.swift in Sources */,
+				7592A7A42459EB4300890488 /* Reachability.swift in Sources */,
+				7592A7982459E76E00890488 /* ResponseModel.swift in Sources */,
+				7592A79D2459E7E300890488 /* ImageDownloader.swift in Sources */,
+				7592A7962459E6B200890488 /* Utility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
