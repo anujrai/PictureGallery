@@ -30,6 +30,14 @@ final class NetworkWrapper {
     static let sharedInstance = NetworkWrapper()
     private init(){}
 
+    /**
+    Makes the  new request and returns the response in decodable format
+    - parameters:
+    - url: Instanse of URL
+    - modelResponse: The name of Modal
+    - completionHandler: A closure which is called with error and  model response
+    
+    */
     func fetchMembers<T: Decodable>(for url: URL,
                                     using session: URLSessionProtocol = URLSession.shared,
                                     result: @escaping (Result<T, Error>) -> Void)
