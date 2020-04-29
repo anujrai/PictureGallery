@@ -36,9 +36,7 @@ final class NetworkWrapper {
     {
         session.dataTask(with: url) { (data, response, error) in
             
-            //let content = readDummyJSONResponse()!
             DispatchQueue.main.async {
-                debugPrint(data)
 
                 guard let content = data, error == nil else {
                     debugPrint(error.debugDescription)

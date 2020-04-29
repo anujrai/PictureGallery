@@ -9,22 +9,15 @@
 import UIKit
 
 class PhotoTableView: UITableView {
-
-
+    
+    
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
         
-        // configure()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("Not implemented")
-    }
-    
-    private func configure() {
-        self.register(VAPhotoGalleryCell.self)
-        self.estimatedRowHeight = UITableView.automaticDimension
-        self.rowHeight = 350
     }
     
     private func showTableView(in parentView: UIView) {
