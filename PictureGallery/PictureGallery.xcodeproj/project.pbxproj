@@ -21,6 +21,12 @@
 		7592A7A22459EAF500890488 /* Network Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7592A7A12459EAF500890488 /* Network Wrapper.swift */; };
 		7592A7A42459EB4300890488 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7592A7A32459EB4300890488 /* Reachability.swift */; };
 		7592A7A62459EB5A00890488 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7592A7A52459EB5A00890488 /* ReachabilityManager.swift */; };
+		7592A7A92459EF1100890488 /* PhotoTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7592A7A82459EF1100890488 /* PhotoTableView.swift */; };
+		7592A7AB2459F29600890488 /* PhotosContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7592A7AA2459F29600890488 /* PhotosContentView.swift */; };
+		7592A7AD2459F2D700890488 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7592A7AC2459F2D700890488 /* PhotoTableViewCell.swift */; };
+		7592A7AF2459F34300890488 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7592A7AE2459F34300890488 /* SpinnerView.swift */; };
+		7592A7B12459F43E00890488 /* NoConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7592A7B02459F43E00890488 /* NoConnectionView.swift */; };
+		7592A7B42459F62700890488 /* Photos.json in Resources */ = {isa = PBXBuildFile; fileRef = 7592A7B32459F62700890488 /* Photos.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +58,12 @@
 		7592A7A12459EAF500890488 /* Network Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network Wrapper.swift"; sourceTree = "<group>"; };
 		7592A7A32459EB4300890488 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		7592A7A52459EB5A00890488 /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		7592A7A82459EF1100890488 /* PhotoTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableView.swift; sourceTree = "<group>"; };
+		7592A7AA2459F29600890488 /* PhotosContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosContentView.swift; sourceTree = "<group>"; };
+		7592A7AC2459F2D700890488 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		7592A7AE2459F34300890488 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
+		7592A7B02459F43E00890488 /* NoConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoConnectionView.swift; sourceTree = "<group>"; };
+		7592A7B32459F62700890488 /* Photos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Photos.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +105,12 @@
 		755C1AD22456116E00CD7D35 /* PictureGallery */ = {
 			isa = PBXGroup;
 			children = (
-				7592A7A02459EAD700890488 /* Network Layer */,
-				7592A7992459E77300890488 /* Model */,
-				7592A7942459E68000890488 /* Helper Class */,
+				7592A7A72459EEEB00890488 /* Views */,
 				7592A7932459E67100890488 /* ViewController */,
+				7592A7992459E77300890488 /* Model */,
+				7592A7A02459EAD700890488 /* Network Layer */,
+				7592A7942459E68000890488 /* Helper Class */,
+				7592A7B22459F5F300890488 /* Resources */,
 				755C1AD32456116E00CD7D35 /* AppDelegate.swift */,
 				755C1AD92456116E00CD7D35 /* Main.storyboard */,
 				755C1ADC2456117000CD7D35 /* Assets.xcassets */,
@@ -150,6 +164,26 @@
 				7592A7A52459EB5A00890488 /* ReachabilityManager.swift */,
 			);
 			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		7592A7A72459EEEB00890488 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7592A7A82459EF1100890488 /* PhotoTableView.swift */,
+				7592A7AA2459F29600890488 /* PhotosContentView.swift */,
+				7592A7AC2459F2D700890488 /* PhotoTableViewCell.swift */,
+				7592A7AE2459F34300890488 /* SpinnerView.swift */,
+				7592A7B02459F43E00890488 /* NoConnectionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7592A7B22459F5F300890488 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7592A7B32459F62700890488 /* Photos.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7592A7B42459F62700890488 /* Photos.json in Resources */,
 				755C1AE02456117000CD7D35 /* LaunchScreen.storyboard in Resources */,
 				755C1ADD2456117000CD7D35 /* Assets.xcassets in Resources */,
 				755C1ADB2456116E00CD7D35 /* Main.storyboard in Resources */,
@@ -256,11 +291,16 @@
 				755C1AD82456116E00CD7D35 /* RootViewController.swift in Sources */,
 				7592A79F2459E81000890488 /* UIAlertController+Helper.swift in Sources */,
 				7592A79B2459E7BC00890488 /* DataFetchingError.swift in Sources */,
+				7592A7B12459F43E00890488 /* NoConnectionView.swift in Sources */,
+				7592A7A92459EF1100890488 /* PhotoTableView.swift in Sources */,
 				7592A7A22459EAF500890488 /* Network Wrapper.swift in Sources */,
+				7592A7AB2459F29600890488 /* PhotosContentView.swift in Sources */,
+				7592A7AF2459F34300890488 /* SpinnerView.swift in Sources */,
 				7592A7A62459EB5A00890488 /* ReachabilityManager.swift in Sources */,
 				755C1AD42456116E00CD7D35 /* AppDelegate.swift in Sources */,
 				7592A7A42459EB4300890488 /* Reachability.swift in Sources */,
 				7592A7982459E76E00890488 /* ResponseModel.swift in Sources */,
+				7592A7AD2459F2D700890488 /* PhotoTableViewCell.swift in Sources */,
 				7592A79D2459E7E300890488 /* ImageDownloader.swift in Sources */,
 				7592A7962459E6B200890488 /* Utility.swift in Sources */,
 			);
