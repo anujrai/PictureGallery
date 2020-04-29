@@ -23,7 +23,7 @@ struct Photos: Codable {
     var imageUrl : String?
     var description : String?
 
-    enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case title = "title"
         case imageUrl = "imageHref"
         case description = "description"
